@@ -1,0 +1,4 @@
+/** Foundry Monolith style: end-use sectors appear over a bespoke industrial material study with quiet, exact labels. */
+import { SectionHeading } from "./SectionHeading";
+const applications=["Automotive","Engineering","Foundries","Industrial components","Die casting","General manufacturing"];
+export function Applications(){return <section id="applications" className="applications-section section-shell"><SectionHeading index="05" eyebrow="APPLICATIONS / INDUSTRY" title={<>A MATERIAL WITH<br />MANY NEXT FORMS.</>}><p>Aluminium ingots can begin a wide range of industrial production paths. Use this section to spotlight the sectors that match your confirmed product range.</p></SectionHeading><div className="applications-image"><div className="applications-image__overlay" /><div className="applications-list">{applications.map((item,index)=><span key={item}>0{index+1} — {item}</span>)}</div><p>INDUSTRIAL END USE<br />[TO BE CONFIRMED]</p></div></section>;}
